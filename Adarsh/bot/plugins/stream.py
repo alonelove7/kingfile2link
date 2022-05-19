@@ -107,9 +107,9 @@ async def private_receive_handler(c: Client, m: Message):
         msg_text ="""
 ♻️فایل شما با موفقیت به لینک تبدیل شد
 
-💢File Name: `{}`
-ℹ️File Size: `{}`
-🈶Mononlink: `{}`
+💢File Name: <tt>{}</tt>
+ℹ️File Size: <tt>{}</tt>
+🈶Mononlink: <tt>{}</tt>
 
 ⚠️لینک دانلود نیم بها میباشد، قبل از دانلود VPN خود را خاموش کنید!
 
