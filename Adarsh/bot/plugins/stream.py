@@ -107,15 +107,15 @@ async def private_receive_handler(c: Client, m: Message):
         msg_text ="""
 ♻️فایل شما با موفقیت به لینک تبدیل شد
 
-💢نام فایل: {}
-ℹ️حجم فایل: {}
-🈶مونولینک: {}
+💢File Name: `{}`
+ℹ️File Size: `{}`
+🈶Mononlink: `{}`
 
 ⚠️لینک دانلود نیم بها میباشد، قبل از دانلود VPN خود را خاموش کنید!
 
 🆔 @King_Network7"""
 
-        await log_msg.reply_text(text=f"☸️تبدیل جدید\n\n🙍‍♂️ارسال کننده: [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n❕یوزر آیدی: {m.from_user.id}\n\n🌐لینک فایل: {stream_link}\n\n🆔 @King_Network7", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
+        await log_msg.reply_text(text=f"☸️تبدیل جدید\n\n🙍‍♂️ارسال کننده: [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n❕یوزر آیدی: {m.from_user.id}\n\n🌐لینک فایل: {online_link}\n\n🆔 @King_Network7", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
         await m.reply_text(
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
             parse_mode="HTML", 
