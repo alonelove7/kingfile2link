@@ -227,12 +227,12 @@ async def about_handler(bot, message):
         👤درباره ما
 
 ↯طراحی: KingNetwork
- (https://t.me/King_network7)↯سرور: Exclusive
+↯سرور: <a href='https://t.me/King_network7'>Exclusive</a>
 ↯ورژن: 1.0.2
 ↯لینک: نیم بها
-↯حمایت: دونیت
+↯حمایت: <a href='https://www.payping.ir/d/WiZG'>دونیت</a>
 
- (https://www.payping.ir/d/WiZG)🆔 @King_Network7
+🆔 @King_Network7
         """,
   parse_mode="html",
         disable_web_page_preview=True,
